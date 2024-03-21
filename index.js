@@ -103,5 +103,6 @@ const reqlistener = (req, res) => {
   }
 };
 const server = http.createServer(reqlistener);
-server.listen(3000);
+
+server.listen(process.env.PORT || 3005);
 console.log("server get");
